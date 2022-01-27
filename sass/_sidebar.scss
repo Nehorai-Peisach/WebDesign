@@ -1,0 +1,49 @@
+.sidebar{
+    pointer-events: initial;
+    width: 10rem;
+    height: 100vh;
+    background-color: $color-primary;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    a{
+        margin: 3rem 0;
+        color: $color-grey-light-1;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 1rem;
+
+        &:hover{
+            color: $color-secondary;
+        }
+        @media (max-width: $bp-small) {
+            &{
+                visibility: collapse;
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+	.goup{
+		visibility: collapse;
+	}
+    @media (max-width: $bp-small) {
+        visibility: collapse;
+        width: 10rem;
+        height: 10rem;
+        z-index: 1;
+        left: calc(100vw - 15rem);
+        top: calc(100vh + 8rem);
+        .goup{
+            visibility: visible;
+            font-size: 15rem;
+            color: $color-grey-dark-2;
+        }
+    }
+}

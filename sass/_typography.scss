@@ -1,0 +1,49 @@
+.heading-1{
+    color: $color-grey-light-1;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 1rem 0;
+}
+.heading-2{
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.2;
+    margin: 2rem 0;
+}
+.heading-3{
+    color: $color-primary;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.heading-4{
+    font-size: 2.5rem;
+}
+.heading-5{
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.btn{
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem ;
+    border: 0;
+
+    transition: 0.3s all;
+    &:hover{
+        background-color: $color-primary-dark;
+        cursor: pointer;
+    }
+}
+
+.text{
+    font-family: $font-display;
+    font-size: 2rem;
+    font-weight: 200;
+}

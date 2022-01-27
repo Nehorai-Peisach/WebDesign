@@ -1,0 +1,58 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+$color-background-light: #F9F8F4;
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// SCREEN SIZE
+$bp-largest: 1920px;
+$bp-large: 1200px;
+$bp-medium: 1000px;
+$bp-small: 880px;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: $font-primary;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 8px;
+    }
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-display;
+}
+body{
+    @media (max-width: $bp-small) {
+        overflow-x: hidden;
+    }
+}
+.base{
+    position: absolute;
+    left: 10rem;
+    
+    @media (max-width: $bp-small) {
+        left: 0;
+    }
+}

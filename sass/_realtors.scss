@@ -1,0 +1,34 @@
+.realtors{
+    width: 25%;
+    padding: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @media (max-width: $bp-small) {
+        width: 100%;
+    }
+
+    .title{
+        margin: 1rem 0;
+    }
+
+    .realtor{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        min-width: 18rem;
+        max-width: 25rem;
+        margin-bottom: 2rem;
+        img{
+            width: 100%;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+        .realtor-content{
+            align-self: center;
+            padding: 1rem;
+        }
+    }
+}
